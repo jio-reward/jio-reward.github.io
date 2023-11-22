@@ -18,7 +18,9 @@ var bool = fetch(`https://kvdb.io/7W8WYYhyFEsSmQPWVri4Zs/kvs_/${num}`);
 
 document.getElementById("addBtn").addEventListener("click", () => {
 var numQ = document.getElementById("numQ").value;
-  if(!numQ || ){
+  if(!numQ || numQ.trim() == ""){
     return document.getElementById("numQ").style.border="red 1px solid";
-      }
+      };
+ // addNumberToQueue(numQ);
+  //doTask().then(addNumberToQueue(numQ))
 });
