@@ -12,5 +12,6 @@ body: num
 }
 
 function checkNumIfIsInQueue(num){
-
+var bool = fetch(`https://kvdb.io/7W8WYYhyFEsSmQPWVri4Zs/kvs_/${num}`);
+  
 }
