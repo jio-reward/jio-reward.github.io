@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  background-color: #404040;
+  color: #bdbdbd;
+  width: 100%;
+}
+a, img {
+  text-decoration: none;
+}
+.main_div {
+  align-self: center;
+  width: 100%;
+  height: 70%;
+  background-color: #404040;
+  color: #bdbdbd;
+  margin-top: 10%;
+}
+
+#toDo {
+  width: 100%;
+  height: 70%;
+  background-color: #404040;
+  color: #bdbdbd;
+  margin-top: 10%;
+}
+#numQ {
+  width: 100%;
+  height: 8%;
+ background-color: #474747;
+color: #d9d9d9;
+margin-bottom: 5px;
+border-radius: 10px;
+    border: gray 1.5px solid;
+padding: 5px;
+  font-size: 3vh;
+}
+#numtext {
+  font-size: 2vh;
+  margin-top: 10px;
+}
+#erl {
+  font-size: 2vh;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+#numQ:hover, #numQ:focus {
+  border: #25dbe8 2px solid;
+  outline: none;
+}
+.firAdDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  border-bottom: gray 4px solid;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  width: 100%;
+        
+}
+
+.firstRedImg {
+  min-width: 100%;
+width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.butn {
+  width: 100%;
+  height: 8%;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+  background-color: #0080ff;
+  color: #04ff00;
+  border: pink 2px solid;
+  border-radius: 10px;
+}
+.adsContainer {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#searchBTN {
+        position: fixed;
+        cursor: pointer;
+        z-index: 100;
+        transition: transform 100ms ease-in-out;
+      }
+
+      #searchBTN:hover {
+        transform: scale(1.05);
+      }
+
+         .progress-container {
+      width: 80%;
+      margin: 10px auto;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: gray 2px solid;
+           margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      height: 2vh;
+      width: 0;
+      background: linear-gradient(to right, red, orange, yellow, #00e300, blue, #6900ba, #ff33ff);
+    }
+#progress_txt {
+margin-top: 5px;
+margin-left: 30%;
+}
+
+#shareBtn {
+  width: 100%;
+  height: 8%;
+  font-size: 2.5vh;
+  margin-top: 2vh;
+  background-color: #0080ff;
+  color: #ff00bf;
+  border: pink 2px solid;
+  border-radius: 10px;
+}
+
+#success_div {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  background-color: #404040;
+  color: #bdbdbd;
+  margin-top: 10%;
+}
