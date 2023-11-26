@@ -23,7 +23,10 @@ if ('serviceWorker' in navigator) {
       console.error('Service Worker registration failed:', error);
     });
 }
-
+window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+  e.prompt()
+        });
   </script>
 </body>
 </html>
