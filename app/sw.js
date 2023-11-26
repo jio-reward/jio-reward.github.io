@@ -1,18 +1,21 @@
 // sw.js
 
+const cacheName = 'my-cache';
+const cacheFiles = [
+  '/'
+  // Add other files to cache
+];
+
+// Install event: Cache static assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('my-cache').then((cache) => {
-      return cache.addAll([
-        '/',
-        '/index.html',
-        '/firstAD.png'
-        // Add other files to cache
-      ]);
+    caches.open(cacheName).then((cache) => {
+      return cache.addAll(cacheFiles);
     })
   );
 });
 
+// Fetch event: Serve from Cache or Network
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
