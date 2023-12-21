@@ -8,11 +8,9 @@ html, body {
 a, img {
   text-decoration: none;
 }
-
 .main_div {
   align-self: center;
   width: 100%;
-  height: auto;
   background-color: #404040;
   color: #bdbdbd;
   margin-top: 10%;
