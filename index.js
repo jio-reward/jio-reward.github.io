@@ -3,19 +3,6 @@ let numberToQ;
 let doneTo;
 let goTime;
 let directLink = "https://www.toprevenuegate.com/guuamkkf?key=2cfff4b9c8b657c28e1dafd2d73f650e";
-function addNumberToQueue(num) {
-    fetch(`https://kvdb.io/7W8WYYhyFEsSmQPWVri4Zs/numToQueue/${num}`, {
-        method: "POST",
-        body: num
-    });
-    return true;
-}
-
-/*
-function checkNumIfIsInQueue(num){
-    var bool = fetch(`https://kvdb.io/7W8WYYhyFEsSmQPWVri4Zs/kvs/${num}`);
-}
-*/
 
 document.getElementById("addBtn").addEventListener("click", () => {  document.getElementById("numQ").style.border = "#07ed13 2px solid";
     var numQ = document.getElementById("numQ").value;
